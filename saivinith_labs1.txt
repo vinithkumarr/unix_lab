@@ -1,0 +1,42 @@
+mkdir-> Creates a directory.
+cd-> To get into the directory.
+vim file_name-> Creates a file.
+Had fun trying out the commands below:
+
+1. x- To delete the unwanted character.
+2. u- To undo the last command and U undo the whole line.
+3. CTRL- R to redo.
+4. A- To append text at the end.
+5. wq- To save and exit.
+6. q!- To trash all changes.
+7. dw- Move the cursor to the beginning of the word to delete that word.
+8. 2w- To move cursor two words forward.
+9. 3e- To move the cursor to the end of the third word forward.
+10. 0(zero) to move to the start of the line.
+11. d2w- Which deletes words...number can be changed for deleting the number of consecutive words.
+12. dd to delete the line and 2dd to delete two lines.
+13. p- Puts the previously deleted text after the cursor.
+14. r- To replace the letter e.g press re to replace the letter e.
+15. ce- To change until the end of a word.
+16. ce- Deletes the word places you in insert mode.
+17. G- To move you to the bottom of the line.
+18. gg- To move to the bottom of the line.
+19. % to matching ),},]
+20. :s/old/new/g to substitute 'new' foe 'old'.
+21. /backwards search n to find the next occurrence and N to search in opposite direction
+22. ?forward search
+23. :! to run the shell commands like :!dir, :!ls
+24. w- TEST(where TEST is the filename you choose.) save the file.
+25. v- Starts visual mode for selecting the lines.
+26. :r- Filename will insert the content into the current file.
+27. R- To replace more than one character.
+28. y- Operator to copy text using v visual mode and p to paste it.
+29. yw- (copy) yanks one word.
+30. o- opens a line below the cursor and start insert mode.
+31. O- Opens a line above the cursor.
+32. a- Inserts text after the cursor.
+33. A- Inserts text after the end line.
+34. e- Command moves to end of the word.
+35. y- Operator yanks(copies) text, p puts(pastes) it.
+36. R- Enters replace mode until <ESC> pressed.
+37. Ctrl- w to jump from one window to another.
