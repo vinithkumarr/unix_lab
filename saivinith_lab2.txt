@@ -1,0 +1,38 @@
+Commands:
+
+1.who-prints the information about the user.
+2.ls-lists the information.
+3.cal-parints the calender
+4.date-displays the date.
+5.time-gives the time.
+6.uname-gives the information of the system.
+       
+
+
+GIVEN BELOW ARE FEW COMMANDS WHICH WERE USED:
+
+
+ %D     date; same as %m/%d/%y
+
+ %e     day of month, space padded; same as %_d
+
+ %F     full date; same as %Y-%m-%d
+
+ %g     last two digits of year of ISO week number (see %G)
+
+ %G     year of ISO week number (see %V); normally useful only with %V
+
+ %h     same as %b
+
+ %H     hour (00..23)
+
+ %I     hour (01..12)
+
+ %j     day of year (001..366)
+
+ %k     hour, space padded ( 0..23); same as %_H
+
+ %l     hour, space padded ( 1..12); same as %_I
+
+ 
+
