@@ -1,0 +1,40 @@
+Enter into the respected directory.
+Create a table using ms excel.
+Save the file as CSV extension.
+
+Perform the following command:
+
+1. $head -n 5 CSEA1.csv- to display the first five elements from the entered table.
+2. $tail -n 5 CSEA1.csv- to display the list of last five elements from the table entered.
+3. $sort - CSEA1.csv sort the elements in the list based on some given order.
+4. $cut -d, -f 3 CSEA1.csv- To extract a column from the table.
+5. $wc -l filename- to count the number of words, lines etc
+6. $paste CSEA1 CSEB1>CSE- to paste the two fields.
+7. $tr -to substitute or delete.
+8. $sort -d, +pos 2 filename.csv- to sort the table on a particular field.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
