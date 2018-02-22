@@ -1,0 +1,56 @@
+
+Question number 1
+
+1.Write a shell script to check if the given number is positive or negative?
+
+	echo "enter a number "
+	read n
+	if test $n -gt 0
+	then
+        echo "number is positive"
+	else
+	echo "number is negative" 
+	fi
+
+
+2.Write a shell script to display students grade
+
+	echo " enter your marks"
+	read n
+	if [ "$n" -ge 90 ]
+	then
+	echo " you got A"
+	elif [ "$n" -ge 80 ]
+	then
+        echo " you got B"
+	elif [ "$n" -ge 70 ]
+	then
+        echo " you got C"
+	elif [ "$n" -ge 60]
+	then
+        echo "you got D"
+	else
+        echo "you are failed"
+fi
+
+3. Write a shell script to check wether given number is prime or not?
+
+       count =0
+       echo "Enter the number"
+       read n
+       i=1
+       for i in $( seq 1 $n )
+        do
+        if [ `expr $n % $i` -eq 0 ]
+        then
+                count=$(($count+1))
+        fi
+        i=$(($i+1))
+        done
+        if test $count -eq 2
+        then
+
+        echo " number is prime"
+        else
+        echo "number is not prime"
+fi
