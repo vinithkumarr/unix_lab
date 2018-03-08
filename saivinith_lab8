@@ -1,0 +1,6 @@
+
+1) Design a search engine to search for a word/phrase in any/all documents on your computer?
+
+echo "enter a pattern to search"
+read n
+grep -rl "$n" "/home"
