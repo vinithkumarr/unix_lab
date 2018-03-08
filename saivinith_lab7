@@ -1,0 +1,148 @@
+1.PERFORM STRING TEST AND FILE TEST
+
+* STRING TEST
+
+a="abc"
+b="efg"
+
+if [ $a = $b ]
+then
+   echo "$a = $b : a is equal to b"
+else
+   echo "$a = $b: a is not equal to b"
+fi
+
+if [ $a != $b ]
+then
+   echo "$a != $b : a is not equal to b"
+else
+   echo "$a != $b: a is equal to b"
+fi
+
+if [ -z $a ]
+then
+   echo "-z $a : string length is zero"
+else
+   echo "-z $a : string length is not zero"
+fi
+
+if [ -n $a ]
+then
+   echo "-n $a : string length is not zero"
+else
+   echo "-n $a : string length is zero"
+fi
+
+if [ $a ]
+then
+   echo "$a : string is not empty"
+else
+   echo "$a : string is empty"
+fi
+
+
+OUTPUT
+
+abc = efg: a is not equal to b
+abc != efg : a is not equal to b
+-z abc : string length is not zero
+-n abc : string length is noy zero 
+abc : string is not empty
+
+
+* FILE TEST
+
+
+file="sreeja/sreeja_labs7.txt"
+if [ -s $file ]
+then
+   echo "File size is zero"
+ else
+   echo "File size is not zero"
+  fi
+if [ -r $file ]
+then
+   echo "File has read access"
+  else
+   echo "File does not have read access"
+  fi
+if [ -w $file ]
+then
+   echo "File has write permission"
+  else
+   echo "File does not have write permission"
+  fi
+if [ -x $file ]
+then
+   echo "File has execute permission"
+  else
+   echo "File does not have execute permission"
+  fi
+
+
+OUTPUT
+
+File size is not zero
+File does not read access
+File does not have write permission
+File does not have execute permission
+
+2.shell script to prefix all the filenames with the date dd/mm/YY format.
+
+file="/home/sreeja/test"
+cdate=$(date +%d-%m-%Y)
+for file in *
+do      
+        mv "$file" "$cdate"_"$file"
+done 
+
+OUTPUT
+
+01-03-2018_t1
+01-03-2018_t2
+01-03-2018_t3
+
+3.File related commands.
+ a)cp-used to copy contents of one file to another.
+ b)rm-used to remove file from the existing directory.
+ c)mv-used to renmae a file within the directory.
+ d)cmp-used to compare the contents of two files inside the directory.
+ e)diff-used to find the difference in the contents of two files existing within the directory.
+  f)comm-used to find the common contents between the two files within the directory.
+ 
+4.setting permission to the file or directory.
+ # create a sample file within a directory,then perform the following:
+  $chmod u+x sample
+  $ls -l sample
+  
+5.use of commands find and xargs?
+#the find command is used to find the file within a directory 
+#the xargs command is used to build and execute commmands from standard inputs.
+
+6.Grep with all possible options
+
+$ cat > sample
+Unix is a programming language that use commands
+unix is case sensitive
+It helps to perform multi task
+
+With "-i" option
+$ grep -i "unix" sample
+
+With "-v" option
+$ grep -v "unix" sample
+
+With "-n" option
+$ grep -n "unix" sample
+
+With "-c" option
+$ grep -c "unix" sample
+
+With "-l" option
+$ grep -l "unix" sample
+
+With "-e" option
+$ grep -e "unix" -e "Unix" sample
+
+With "-x" option
+$ grep -x "unix" sample
