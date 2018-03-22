@@ -1,0 +1,16 @@
+
+EXCERCISE PROGRAMS ON SED COMMAND:
+
+1.Display the employee details who's designation manager/Manager?
+->sed -i "empl[manager/Manager]/p" empl.
+
+2.salary which starts with 2?
+->sed -d -f 5 "^2" empl.
+
+3.from line 1 to 5 if any designation is manager replace it with director?
+->sed -e 'manager/director/g' empl.
+
+4.design a search engine to search for a word or a phrase in all or any file on your computer?
+->echo "enter the pattern to be searched"
+  read n
+  grep -r1 "$n" "/home"
