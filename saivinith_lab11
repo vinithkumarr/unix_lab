@@ -1,0 +1,26 @@
+EXERCISE
+
+1) delete all the blank space
+
+Ans) sed 's/ //g' emp.lst
+
+2) print only odd numbers of lines using awk command
+
+Ans) - awk 'NR %2 == 1' emp.lst
+
+3)print the last linewithout knowing the number
+
+Ans)command sed -n '$p' emp.lst
+
+
+4)awk command for head -n 5 filename
+
+Ans) command -awk 'NR==1,NR==5' emp.lst
+
+5)awk command for sed -n '5,10p' filemane
+
+Ans)command- awk 'NR==5,NR==10; emp.lst
+
+6)awk command for tail  +5 filename
+
+Ans) awk "NR==5,NR==999' emp.lst
