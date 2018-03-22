@@ -1,23 +1,23 @@
 empid|emp name|designation|salary
-01|mukul|ceo|99999
-02|harsha|directo|98888
-03|vinith|manager|98888
-04|rashid|staff|50000
+01|vinith|ceo|100000
+02|harsha|directo|90000
+03|mukul|manager|82000
+04|rashid|staff|5000
 05|gaurav|staff|100
-06|pranjal|manager|20000
-07|pavan|director|7000
-08|pranav|manager|20000
-09|dj|staff|10000
+06|pranjal|manager|20
+07|pavan|director|70
+08|pranav|manager|200
+09|dj|staff|1000
 10|prajval|staff|3000
-11|mukul|manager|30000
+11|prajval|manager|30000
 
 
 
 q1. print the mane which is ocuring more than one time
 ans.
  $cat emp.lst |grep mukul
-01|mukul|ceo|99999
-11|mukul|manager|30000
+01|prajval|staff|3000
+11|prajval|manager|30000
 
 q2. print the details of the employee having salary starting with 2 and ending with zero having total 5 digits
 ans. 
@@ -27,24 +27,23 @@ ans.
 
 q3. display all managers
  cat emp.lst |grep manager
-03|vinith|manager|98888
+03|mukul|manager|98888
 06|pranjal|manager|20000
 08|pranav|manager|20000
-11|mukul|manager|30000
+11|prajval|manager|30000
 
 
 q4. replace manager with director
 ans.
 sed 's/manager/director/g' emp.lst
 empid|emp name|designation|salary
-01|mukul|ceo|99999
+01|vinith|ceo|99999
 02|harsha|directo|98888
-03|vinith|director|98888
+03|mukul|director|98888
 04|rashid|staff|50000
 05|gaurav|staff|100
 06|pranjal|director|20000
 07|pavan|director|7000
 08|pranav|director|20000
 09|dj|staff|10000
-10|prajval|staff|3000
-11|mukul|director|30000
+10|prajval|director|30000
