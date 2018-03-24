@@ -1,0 +1,10 @@
+names=" Kishore gaurav melvin harsha"
+PS3="Select names: "
+select name in $names
+do
+    if [ $name == harsha ]
+      then
+        break
+    fi
+    echo "hello $name"
+done
